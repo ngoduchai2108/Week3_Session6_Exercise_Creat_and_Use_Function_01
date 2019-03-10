@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise2</title>
+</head>
+<body>
+<input type="number" onchange="change(this.value);"><br/>
+Reault: <p id="result"></p>
+<script>
+function change(n) {
+    return document.getElementById("result").innerHTML=parseInt(n)+1;
+}
+</script>
+</body>
+</html>

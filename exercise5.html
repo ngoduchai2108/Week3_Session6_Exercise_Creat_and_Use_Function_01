@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 5</title>
+</head>
+<body>
+<script>
+    var stars=[ "Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe"," Regulus" ];
+    var constellations= ["Ursa Minor", "Tarurus", "Cygnus", "Lyra"," Aquila", "Ursa Major", "Leo"];
+    var star=prompt('Enter a name of the star');
+    function search_star(name_star) {
+        let check=false;
+        for (let i=0; i<stars.length;i++){
+            if (name_star===stars[i]){
+                alert(name_star+" belongs to the constellation "+constellations[i]+"!!!");
+                check=true;
+                break;
+            }
+            check=false;
+        }
+        if (check===false){
+            alert(name_star+' not belongs to the constellation !!!');
+        }
+    }
+    search_star(star);
+</script>
+</body>
+</html>
